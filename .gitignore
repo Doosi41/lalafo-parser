@@ -1,0 +1,6 @@
+.env
+node_modules/
+seen_ids.json
+lalafo_report.html
+.DS_Store
+todo.txt
