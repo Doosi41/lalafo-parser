@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+  <defs>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff9f0a"/><stop offset=".35" stop-color="#ff375f"/>
+      <stop offset=".7" stop-color="#bf5af2"/><stop offset="1" stop-color="#0a84ff"/>
+      <animateTransform attributeName="gradientTransform" type="rotate" from="0 .5 .5" to="360 .5 .5" dur="9s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="ti" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#8e8e93"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset="1" stop-color="#fff" stop-opacity=".04"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="60"/></filter>
+  </defs>
+  <rect width="1200" height="420" rx="32" fill="#000"/>
+  <g filter="url(#blur)" opacity=".55">
+    <circle cx="900" cy="120" r="130" fill="#bf5af2"/>
+    <circle cx="1050" cy="300" r="120" fill="#0a84ff"/>
+    <circle cx="760" cy="330" r="90" fill="#ff375f"/>
+  </g>
+  <rect x="640" y="70" width="460" height="280" rx="40" fill="url(#glass)" stroke="#fff" stroke-opacity=".28" stroke-width="1.5"/>
+  <g font-family="SF Mono, Menlo, Consolas, monospace" font-size="20" fill="#fff" fill-opacity=".85">
+    <text x="680" y="130" fill="#30d158">● ● ●</text>
+    <text x="680" y="180">/start → Rent → Bishkek</text>
+    <text x="680" y="212">      searching lalafo.kg…</text>
+    <text x="680" y="262" fill="#ff9f0a">[+] 48 new ads found</text>
+    <text x="680" y="294" fill="#0a84ff">[+] report.html saved</text>
+  </g>
+  <g font-family="-apple-system, SF Pro Display, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+    <text x="70" y="190" font-size="84" font-weight="700" fill="url(#acc)">lalafo-parser</text>
+    <text x="72" y="248" font-size="30" font-weight="500" fill="url(#ti)">Apartment ads from lalafo.kg, in Telegram</text>
+    <text x="72" y="292" font-size="22" fill="#8e8e93">Node.js · Playwright · node-telegram-bot-api</text>
+  </g>
+</svg>
